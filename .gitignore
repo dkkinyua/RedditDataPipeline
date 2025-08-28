@@ -8,7 +8,7 @@ __pycache__/
 
 # Files to avoid
 test.ipynb
-
+myenv
 
 # Distribution / packaging
 .Python
