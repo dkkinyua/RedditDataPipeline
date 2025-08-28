@@ -14,15 +14,8 @@ def test_dag():
     @task
     def say_hello():
         return "Hello, Airflow's working!"
-
-    @task
-    def check_env_variables(message):
-        sender = os.getenv("SENDER")
-        return sender
     
-    s = say_hello()
-    c = check_env_variables(s)
+    say_hello()
 
-    s >> c
 
 test = test_dag()
